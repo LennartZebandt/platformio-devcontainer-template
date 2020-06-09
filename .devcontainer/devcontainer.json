@@ -1,0 +1,19 @@
+{
+    "name": "Platformio Devcontainer",
+    "dockerFile": "Dockerfile",
+    "remoteUser": "vscode",
+    "workspaceFolder": "/home/vscode/platformio-devcontainer",
+    "workspaceMount": "type=bind,source=${localWorkspaceFolder},target=${containerWorkspaceFolder}",
+    "mounts": [
+        "type=bind,source=/dev/bus/usb,target=/dev/bus/usb"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "platformio.platformio-ide"
+    ],
+    "runArgs": [
+        "--privileged"
+    ]
+}
