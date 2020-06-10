@@ -1,6 +1,6 @@
 # Platformio Devcontainer Template
 
-This is a VSC Devcontainer for Platformio based on Debian Buster.
+This is a [VSC Devcontainer](https://code.visualstudio.com/docs/remote/containers) for [Platformio](https://platformio.org/) based on Debian Buster.
 
 - It uses Python 3.8.3
 - Installs the nececessary udev rules
