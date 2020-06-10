@@ -2,18 +2,27 @@
     "name": "Platformio Devcontainer",
     "dockerFile": "Dockerfile",
     "remoteUser": "vscode",
-    "workspaceFolder": "/home/vscode/platformio-devcontainer",
+    "workspaceFolder": "/home/vscode/Documents/PlatformIO/Projects",
     "workspaceMount": "type=bind,source=${localWorkspaceFolder},target=${containerWorkspaceFolder}",
     "mounts": [
+        // Mount usb devices to container
         "type=bind,source=/dev/bus/usb,target=/dev/bus/usb"
     ],
     "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+        // Use bash instead of shell
+        "terminal.integrated.shell.linux": "/bin/bash",
+        // Use fixed port for pio home
+        "platformio-ide.pioHomeServerHttpPort": 8008,
+        "platformio-ide.disablePIOHomeStartup": true
     },
+    // Only install pio extension in container
     "extensions": [
         "platformio.platformio-ide"
     ],
+    // This is needed to passtrough usb devices
     "runArgs": [
         "--privileged"
-    ]
+    ],
+    // This port is used by pio home
+    "forwardPorts": [ 8008 ]
 }

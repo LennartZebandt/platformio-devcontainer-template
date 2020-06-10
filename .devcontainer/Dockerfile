@@ -21,6 +21,3 @@ RUN usermod -a -G plugdev $USER
 
 # Change to new user after setup
 USER $USER
-
-# Create project folder
-RUN mkdir /home/${USER}/platformio-devcontainer
