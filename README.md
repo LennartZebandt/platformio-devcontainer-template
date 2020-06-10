@@ -13,5 +13,5 @@ Windows 10 is currently not supported, because there is [no USB passtrough suppo
 
 ## License
 
-Copyright 1996 Lennart Zebandt
+Copyright 1996 Lennart Zebandt  
 SPDX-License-Identifier: Apache-2.0
