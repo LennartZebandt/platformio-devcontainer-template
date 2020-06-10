@@ -1,4 +1,4 @@
-## Platformio Devcontainer Template
+# Platformio Devcontainer Template
 
 This is a VSC Devcontainer for Platformio based on Debian Buster.
 
