@@ -1,6 +1,6 @@
 FROM python:3.8.3-buster
 
-LABEL maintainer="lennart@zebandt.dev"
+LABEL maintainer="contact@z3b4.xyz"
 LABEL version="1.0"
 LABEL description="A container for developing platformio applications in a Visual Studio Code devcontainer"
 LABEL license="Apache-2.0"
